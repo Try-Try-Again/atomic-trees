@@ -11,17 +11,17 @@
 
   // Support IE 9-10, PhantomJS: Fallback for fuzzysort.js used by ./html.js
   var Map = typeof Map === "function" ? Map : function StringMap() {
-    var store = Object.create( null );
-    this.get = function( strKey ) {
-      return store[ strKey ];
-    };
-    this.set = function( strKey, val ) {
-      store[ strKey ] = val;
-      return this;
-    };
-    this.clear = function() {
-      store = Object.create( null );
-    };
+  	var store = Object.create( null );
+  	this.get = function( strKey ) {
+  		return store[ strKey ];
+  	};
+  	this.set = function( strKey, val ) {
+  		store[ strKey ] = val;
+  		return this;
+  	};
+  	this.clear = function() {
+  		store = Object.create( null );
+  	};
   };
 
   function _typeof(obj) {
@@ -1356,7 +1356,7 @@
   var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
   function commonjsRequire (path) {
-    throw new Error('Could not dynamically require "' + path + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
+  	throw new Error('Could not dynamically require "' + path + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
   }
 
   var promisePolyfill = {exports: {}};

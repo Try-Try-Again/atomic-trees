@@ -15164,15 +15164,15 @@ function pathToRegexp (path, keys, options) {
 },{"isarray":87}],103:[function(require,module,exports){
 'use strict';
 module.exports = {
-  stdout: false,
-  stderr: false
+	stdout: false,
+	stderr: false
 };
 
 },{}],104:[function(require,module,exports){
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.typeDetect = factory());
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.typeDetect = factory());
 }(this, (function () { 'use strict';
 
 /* !
